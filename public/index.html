@@ -31,7 +31,6 @@
             window.dispatchEvent(new CustomEvent( 'wasmValue', {detail: str}));
         }
 
-        // Listen for new wasm strings
         window.addEventListener('wasmValue', str => {
             console.log('Recieved from C, ', str.detail);
         })
